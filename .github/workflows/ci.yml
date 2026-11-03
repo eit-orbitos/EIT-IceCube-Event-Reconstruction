@@ -1,0 +1,19 @@
+name: candidate-integrity
+on:
+  push:
+  pull_request:
+jobs:
+  reproducible:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Unit tests and reproducible-build checks
+        run: python tools/reproduce.py --out /tmp/eit_candidate.zip --evidence /tmp/eit_candidate_evidence.json
+      - name: Verify full archive
+        run: python tools/verify_release.py /tmp/eit_candidate.zip --source .
