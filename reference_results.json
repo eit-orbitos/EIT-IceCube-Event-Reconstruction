@@ -1,0 +1,84 @@
+{
+  "benchmark_model": "planar_arrival_time_proxy_NOT_Cherenkov_track_model",
+  "config_sha256": "2f10e0ebbf2429a2c19b1d0de34053c23bf4a72a79cfaaac738ed8ecd93b38e6",
+  "methods": [
+    "ols",
+    "eit_stateful_irls"
+  ],
+  "notes": [
+    "A positive median error delta means the candidate is better on THIS synthetic set only.",
+    "Bootstrap direction spread is a heuristic, not a calibrated confidence interval.",
+    "Brightness proxy is arbitrary units, NOT neutrino energy.",
+    "The candidate uses standard Huber IRLS with persistent iteration weights; no novel method is established.",
+    "No IceCube data were downloaded, reproduced, or used in this benchmark."
+  ],
+  "package": "EIT_ICECUBE_EVENT_RECONSTRUCTION_V0.1.2",
+  "scenarios": {
+    "clean": {
+      "eit_stateful_irls": {
+        "count": 40,
+        "false_positive_rate": 0.0,
+        "mean_angular_error_deg": 0.130106,
+        "mean_bootstrap_spread_deg": 0.137929,
+        "median_angular_error_deg": 0.118018,
+        "outlier_hit_count": 0,
+        "outlier_recall": null
+      },
+      "median_error_delta_ols_minus_candidate_deg": 0.0,
+      "ols": {
+        "count": 40,
+        "false_positive_rate": 0.0,
+        "mean_angular_error_deg": 0.130106,
+        "mean_bootstrap_spread_deg": 0.131473,
+        "median_angular_error_deg": 0.118018,
+        "outlier_hit_count": 0,
+        "outlier_recall": null
+      }
+    },
+    "contaminated": {
+      "eit_stateful_irls": {
+        "count": 40,
+        "false_positive_rate": 0.0,
+        "mean_angular_error_deg": 0.234559,
+        "mean_bootstrap_spread_deg": 0.298751,
+        "median_angular_error_deg": 0.233126,
+        "outlier_hit_count": 249,
+        "outlier_recall": 0.913111
+      },
+      "median_error_delta_ols_minus_candidate_deg": 2.351025,
+      "ols": {
+        "count": 40,
+        "false_positive_rate": 0.086389,
+        "mean_angular_error_deg": 3.04565,
+        "mean_bootstrap_spread_deg": 3.10333,
+        "median_angular_error_deg": 2.584151,
+        "outlier_hit_count": 249,
+        "outlier_recall": 0.909572
+      }
+    },
+    "dropout_contaminated": {
+      "eit_stateful_irls": {
+        "count": 40,
+        "false_positive_rate": 0.0,
+        "mean_angular_error_deg": 0.279495,
+        "mean_bootstrap_spread_deg": 0.54185,
+        "median_angular_error_deg": 0.265165,
+        "outlier_hit_count": 182,
+        "outlier_recall": 0.862679
+      },
+      "median_error_delta_ols_minus_candidate_deg": 3.039413,
+      "ols": {
+        "count": 40,
+        "false_positive_rate": 0.104532,
+        "mean_angular_error_deg": 3.517476,
+        "mean_bootstrap_spread_deg": 3.314667,
+        "median_angular_error_deg": 3.304578,
+        "outlier_hit_count": 182,
+        "outlier_recall": 0.845833
+      }
+    }
+  },
+  "scientific_status": "UNVALIDATED_FOR_REAL_ICECUBE_DATA",
+  "type": "synthetic_toy_timing_benchmark_ONLY",
+  "version": "0.1.2"
+}

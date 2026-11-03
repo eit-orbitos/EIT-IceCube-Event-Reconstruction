@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite this candidate software and the separate IceCube source data if used."
+type: software
+title: "EIT IceCube Event Reconstruction V0.1.2: Synthetic Timing Benchmark"
+authors:
+  - family-names: Mladenovski
+    given-names: Toni
+version: 0.1.2
+license: PolyForm-Noncommercial-1.0.0
+keywords:
+  - synthetic benchmark
+  - time-of-arrival estimation
+  - robust regression
+  - research candidate
+abstract: "Deterministic synthetic planar-arrival-time benchmark comparing OLS with stateful Huber IRLS. Not validated on IceCube data."

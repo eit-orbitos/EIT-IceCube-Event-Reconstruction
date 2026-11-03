@@ -1,0 +1,16 @@
+{
+  "bootstrap_replicates": 8,
+  "clean_noise_sigma_ns": 8.0,
+  "dropout_fraction": 0.30,
+  "events_per_scenario": 40,
+  "geometry_halfwidth_m": 250.0,
+  "hits_per_event": 56,
+  "huber_delta_ns": 30.0,
+  "irls_iterations": 16,
+  "master_seed": 20261102,
+  "memory_inertia": 0.50,
+  "outlier_fraction": 0.12,
+  "outlier_noise_sigma_ns": 550.0,
+  "slope_ns_per_m": 4.44,
+  "time_intercept_ns": 10000.0
+}

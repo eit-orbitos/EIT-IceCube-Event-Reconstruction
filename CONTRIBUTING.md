@@ -1,0 +1,3 @@
+# Contribution protocol
+
+Fixes are welcome after the conceptual author has approved public release. Never modify a frozen ZIP or rewrite a provenance anchor. Changes to benchmark configuration, training/evaluation rules, synthetic distribution, or evaluation threshold must be versioned with rationale and new reference results. Keep synthetic data separate from truth inputs. Cite original IceCube sources appropriately, but do not imply affiliation or scientific endorsement. Report failed invariance, singular geometry and distribution-shift cases. Add tests for each bug fix; compare byte manifests independently.

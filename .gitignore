@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+*.zip
+*_EVIDENCE.json
+*_SHA256.txt
+synthetic_hits.jsonl
+synthetic_truth.jsonl
+results.json
+.DS_Store

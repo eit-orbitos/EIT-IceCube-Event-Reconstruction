@@ -1,0 +1,62 @@
+{
+  "cases": {
+    "correlated_shift_40pct": {
+      "events": 30,
+      "median_angular_error_deg": {
+        "eit_stateful_irls": 3.47,
+        "ols": 2.556
+      },
+      "rejected": {
+        "eit_stateful_irls": 0,
+        "ols": 0
+      }
+    },
+    "late_50pct": {
+      "events": 120,
+      "median_angular_error_deg": {
+        "eit_stateful_irls": 1.996,
+        "ols": 3.378
+      },
+      "rejected": {
+        "eit_stateful_irls": 0,
+        "ols": 0
+      }
+    },
+    "leverage_20pct": {
+      "events": 120,
+      "median_angular_error_deg": {
+        "eit_stateful_irls": 1.551,
+        "ols": 27.102
+      },
+      "rejected": {
+        "eit_stateful_irls": 0,
+        "ols": 0
+      }
+    },
+    "near_coplanar": {
+      "events": 120,
+      "median_angular_error_deg": {
+        "eit_stateful_irls": null,
+        "ols": null
+      },
+      "rejected": {
+        "eit_stateful_irls": 120,
+        "ols": 120
+      }
+    },
+    "sym_12pct": {
+      "events": 120,
+      "median_angular_error_deg": {
+        "eit_stateful_irls": 0.198,
+        "ols": 2.57
+      },
+      "rejected": {
+        "eit_stateful_irls": 0,
+        "ols": 0
+      }
+    }
+  },
+  "note": "A geometry rejection is not a real-detector quality/accuracy claim.",
+  "package_version": "0.1.2",
+  "status": "POST_HOC_SYNTHETIC_REGRESSION_NOT_SCIENTIFIC_VALIDATION"
+}

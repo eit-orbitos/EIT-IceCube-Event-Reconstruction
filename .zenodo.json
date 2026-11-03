@@ -1,0 +1,21 @@
+{
+  "creators": [
+    {
+      "name": "Mladenovski, Toni"
+    }
+  ],
+  "title": "EIT IceCube Event Reconstruction V0.1.2: Noncommercial License-Only Candidate",
+  "description": "<p>License-only candidate based on V0.1.1: PolyForm Noncommercial License 1.0.0. No algorithm, simulation, or acceptance criterion changed. Unvalidated synthetic benchmark (OLS vs Huber IRLS); not an official IceCube product, not validated on detector data, and not yet frozen or approved for deposition. No organization affiliation is asserted.</p>",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "version": "0.1.2",
+  "keywords": [
+    "synthetic benchmark",
+    "robust regression",
+    "time-of-arrival",
+    "NOVA Q",
+    "EIT",
+    "unvalidated research candidate"
+  ]
+}
